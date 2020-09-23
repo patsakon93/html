@@ -1,0 +1,86 @@
+<html>
+<head>
+    <font face="TH sarabanPSK" style="font-size:100;"></font>
+    <!--link rel="stylesheet" href="mystyle.css"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>    
+    <form>
+        <table border="1" width="50" class="table" >
+            <thead class="thead-dark">
+                <tr>
+                    <th>ประเภทข้อมูล</th>
+                    <th>ช่องกรอกข้อมูล</th>
+                </tr>
+            </thead>
+            <tr class="table-primary">
+                <td>รหัสนักศึกษา:</td>
+                <td><input type="text" maxlength="20" required /> </td>
+            </tr>
+            <tr class="table-danger">
+                <td>ชื่อ-นามสกุลนักศึกษา:</td>
+                <td><input type="text" size="30"required /> </td>
+            </tr>
+            <tr class="table-primary">
+                <td>Password:</td>
+                <td><input type="password" maxlength="6" required /> </td>
+            </tr>
+            <tr class="table-danger">
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="1" required/> ชาย <input type="radio" name="gender" value="2" /> หญิง <input type="radio" name="gender" value="3" /> อื่นๆ </td><br/>
+            </tr>
+            <tr class="table-primary">
+                <td>วันเกิด:</td>
+                <td><input type="date" required/>  </td>
+            </tr>
+            <tr class="table-danger">
+                <td>ส่วนสูง(ซม.)</td>
+                <td><input type="number" min="120" max="200" required/> </td>
+            </tr>
+            <tr class="table-primary">
+                <td>น้ำหนัก(กก.)</td>
+                <td><input type="number" min="30" max="200" required/></td>
+            </tr>
+            <tr class="table-danger">
+                <td>Tel.</td>
+                <td><input type="tel" required/> </td>
+            </tr>    
+            <tr class="table-primary">
+                <td>อาหารที่ชอบ</td>
+                <td><input type="text"  required/> </td>
+            </tr>
+            <tr class="table-danger">
+                <td>email:</td>
+                <td><input type="email" required/></td>
+            </tr>
+            <tr class="table-primary">
+                <td>อัพโหลดรูป</td>
+                <td><input type="file" required/></td>
+            </tr>
+        </table><br/>
+        <input type="submit" value="ยืนยันข้อมูล"/>  <input type="reset" value="ยกเลิก"/><br />
+        <input type="range" id="vol" name="vol" min="0" max="50">
+        
+        
+        <!--ข้อมูลที่1<input type="text"/> <br />
+        ข้อมูลที่2<input type="password" /><br />
+        ข้อมูลที่3<input type="hidden" value="name" /><br />
+        ข้อมูลที่4<input type="redio" name="redio" /><br />
+        ข้อมูลที่5<input type="checkbox" value="chackbox" /><br />
+        ข้อมูลที่6<input type="file" /><br /-->
+    </form>
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-dark">Dark</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-link">Link</button>
+</body>
+</html>
